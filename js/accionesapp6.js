@@ -1,15 +1,16 @@
 // JavaScript Document
 
-$(document).ready(function (e){
-	document.add.EventListener("deviceready",function(){
+$(document).ready(function(e){
+	document.addEventListener("deviceready",function(){
 		
-		$('#beep').tap(function (){
-			navigator.notification.beep (2);
+		$('#beep').tap(function(){
+			navigator.notification.beep(2);
 		});//tap beep
 		
-		$('#vibrar').tap(function (){
-			navigator.notification .vibrate (1000);
+		$('#vibrar').tap(function(){
+			navigator.notification.vibrate(1000);
 		});//tap vibrar
 		
-	},false);//deviceready
+		
+	},false); //deviceready
 });//ready
